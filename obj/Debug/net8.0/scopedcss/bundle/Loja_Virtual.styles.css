@@ -1,92 +1,93 @@
-﻿/* TEMA ESCURO - FUNDO PRETO E LETRAS BRANCAS */
-body {
+/* _content/Loja_Virtual/Views/Shared/_Layout.cshtml.rz.scp.css */
+/* TEMA ESCURO - FUNDO PRETO E LETRAS BRANCAS */
+body[b-daxs5ezzg9] {
     background-color: #0a0a0a;
     color: #ffffff;
 }
 
-.navbar {
+.navbar[b-daxs5ezzg9] {
     background-color: #000000 !important;
     border-bottom: 1px solid #333 !important;
 }
 
-.navbar-brand, .nav-link {
+.navbar-brand[b-daxs5ezzg9], .nav-link[b-daxs5ezzg9] {
     color: #ffffff !important;
 }
 
-.navbar-brand:hover, .nav-link:hover {
+.navbar-brand:hover[b-daxs5ezzg9], .nav-link:hover[b-daxs5ezzg9] {
     color: #cccccc !important;
 }
 
-.navbar-toggler {
+.navbar-toggler[b-daxs5ezzg9] {
     background-color: #333 !important;
 }
 
-.navbar-toggler-icon {
+.navbar-toggler-icon[b-daxs5ezzg9] {
     filter: invert(1);
 }
 
-.container, main {
+.container[b-daxs5ezzg9], main[b-daxs5ezzg9] {
     background-color: #0a0a0a;
     color: #ffffff;
 }
 
-a {
+a[b-daxs5ezzg9] {
     color: #66b0ff !important;
 }
 
-.btn-primary {
+.btn-primary[b-daxs5ezzg9] {
     background-color: #0d6efd !important;
     border-color: #0d6efd !important;
 }
 
-.btn-secondary {
+.btn-secondary[b-daxs5ezzg9] {
     background-color: #444 !important;
     border-color: #555 !important;
     color: #fff !important;
 }
 
-.table {
+.table[b-daxs5ezzg9] {
     color: #ffffff;
     background-color: #1a1a1a;
 }
 
-.table th, .table td {
+.table th[b-daxs5ezzg9], .table td[b-daxs5ezzg9] {
     color: #ffffff;
     border-color: #333;
 }
 
-.form-control, .form-select {
+.form-control[b-daxs5ezzg9], .form-select[b-daxs5ezzg9] {
     background-color: #1a1a1a;
     color: #ffffff;
     border-color: #444;
 }
 
-.form-control:focus, .form-select:focus {
+.form-control:focus[b-daxs5ezzg9], .form-select:focus[b-daxs5ezzg9] {
     background-color: #1a1a1a;
     color: #ffffff;
     border-color: #0d6efd;
 }
 
-label {
+label[b-daxs5ezzg9] {
     color: #ffffff;
 }
 
-.card {
+.card[b-daxs5ezzg9] {
     background-color: #1a1a1a;
     color: #ffffff;
     border-color: #333;
 }
 
-footer {
+footer[b-daxs5ezzg9] {
     background-color: #000000;
     color: #ffffff;
     border-top: 1px solid #333;
 }
 
-.border-top, .border-bottom {
+.border-top[b-daxs5ezzg9], .border-bottom[b-daxs5ezzg9] {
     border-color: #333 !important;
 }
 
-.box-shadow {
+.box-shadow[b-daxs5ezzg9] {
     box-shadow: 0 .25rem .75rem rgba(255, 255, 255, .05);
 }

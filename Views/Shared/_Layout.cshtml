@@ -1,46 +1,122 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Loja_Virtual</title>
+    <title>@ViewData["Title"] - Loja Virtual</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/Loja_Virtual.styles.css" asp-append-version="true" />
+    
+    <style>
+        /* TEMA ESCURO DIRETO NO LAYOUT */
+        body {
+            background-color: #0a0a0a !important;
+            color: #ffffff !important;
+        }
+        
+        
+        .navbar {
+            background-color: #000000 !important;
+            border-bottom: 1px solid #333 !important;
+        }
+        
+        .navbar-brand, .nav-link {
+            color: #ffffff !important;
+        }
+        
+        .navbar-brand:hover, .nav-link:hover {
+            color: #cccccc !important;
+        }
+        
+        .navbar-toggler {
+            background-color: #333 !important;
+        }
+        
+        .navbar-toggler-icon {
+            filter: invert(1);
+        }
+        
+        .container, main {
+            background-color: #0a0a0a !important;
+            color: #ffffff !important;
+        }
+        
+        a {
+            color: #66b0ff !important;
+        }
+        
+        .btn-primary {
+            background-color: #0d6efd !important;
+            border-color: #0d6efd !important;
+        }
+        
+        .btn-secondary {
+            background-color: #444 !important;
+            border-color: #555 !important;
+            color: #fff !important;
+        }
+        
+        .table {
+            color: #ffffff !important;
+            background-color: #1a1a1a !important;
+        }
+        
+        .table th, .table td {
+            color: #ffffff !important;
+            border-color: #333 !important;
+        }
+        
+        .form-control, .form-select {
+            background-color: #1a1a1a !important;
+            color: #ffffff !important;
+            border-color: #444 !important;
+        }
+        
+        label {
+            color: #ffffff !important;
+        }
+        
+        .card {
+            background-color: #1a1a1a !important;
+            color: #ffffff !important;
+            border-color: #333 !important;
+        }
+        
+        footer {
+            background-color: #000000 !important;
+            color: #ffffff !important;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Loja_Virtual</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <a class="navbar-brand fw-bold" asp-area="" asp-controller="Home" asp-action="Index">
+    🛍️ Loja Virtual
+</a>
+
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link" asp-controller="Produtos" asp-action="Index">Produtos</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2026 - Loja_Virtual - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
